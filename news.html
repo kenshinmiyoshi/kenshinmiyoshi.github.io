@@ -18,6 +18,56 @@
 <p>2017/01/07.</p>
 <p>AFC <p>
 
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  -webkit-animation: myfirst 5s 2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+html,
+body {
+  background-color: black;
+}
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+  0%   {background: red; right: 0px; top: 0px;}
+  25%  {background: yellow; left: 500px; top: 0px;}
+  50%  {background: blue; right: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: orange; right: 0px; top: 0px;}
+}
+
+@keyframes myfirst {
+  0%   {background: red; right: 0px; top: 0px;}
+  25%  {background: yellow; left: 500px; top: 0px;}
+  50%  {background: blue; right: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: orange; right: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+<h1>The animation-direction Property</h1>
+
+<p>Play the animation forwards first, then backwards:</p>
+<div></div>
+<p><strong>Note:</strong> The animation-direction property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
 </body>
 </html>
